@@ -32,7 +32,7 @@ function EfterlysFormFlow() {
   async function fetchAuth() {
     const JSONdata = JSON.stringify({
       username: "admin",
-      password: "c8ofU7wAPfG$W&oC&STcAQ4g",
+      password: "%Z$@JiXbh4Qf^h4!2ghydHxT",
     });
 
     const endpoint =
