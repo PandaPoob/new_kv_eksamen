@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /src/views/efterlysning/EfterlysFormFlow
+Disallow: /src/views/indberetning/FremlysFormFlow
+
+Sitemap: https://eksamen-kv.netlify.app/sitemap.xml
