@@ -74,7 +74,7 @@ function EfterlysFormFlow() {
     formData.append("file", step1State.file);
 
     const endpoint =
-      "https://www.pandapoob.com/kea/18_mundtlig/new_kv_database/kv_database/wp-json/wp/v2/media";
+      "https://www.pandapoob.com/kea/18_mundtlig/new_kv_database/wp-json/wp/v2/media";
     const header = {
       Authorization: `Bearer ${authToken}`,
       //Authorization: `Bearer ${"peee"}`,
