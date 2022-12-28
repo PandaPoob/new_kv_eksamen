@@ -82,7 +82,7 @@ const button = {
       justifyContent: "center",
       bg: "brand.redCta",
       fontSize: "xs",
-      borderRadius: "0.2rem",
+      borderRadius: "0.1rem",
       textAlign: "center",
       color: "brand.white",
       fontWeight: "medium",
@@ -103,7 +103,7 @@ const button = {
       justifyContent: "center",
       bg: "brand.blueCta",
       fontSize: "xs",
-      borderRadius: "0.2rem",
+      borderRadius: "0.1rem",
       textAlign: "center",
       color: "brand.white",
       fontWeight: "medium",
@@ -112,6 +112,29 @@ const button = {
       minH: "3.2rem",
       py: "0.8rem",
       px: "1rem",
+
+      _hover: {
+        bg: "brand.blueHover",
+        transform: "scale(1.04)",
+      },
+    },
+
+    testBtn: {
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      bg: "brand.blueCta",
+      fontSize: "smallH",
+      borderRadius: "0.1rem",
+      textAlign: "center",
+      color: "brand.white",
+      fontWeight: "bold",
+      transition: "all .2s ease-in-out",
+      minW: "10rem",
+      minH: "3.2rem",
+      py: "0.8rem",
+      px: "1rem",
+      mt: "2rem",
 
       _hover: {
         bg: "brand.blueHover",

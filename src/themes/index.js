@@ -8,6 +8,7 @@ import FormLabel from "./components/FormLabel";
 import Input from "./components/Input";
 import Select from "./components/Select";
 import Checkbox from "./components/Checkbox";
+import Text from "./components/Text";
 import { textareaTheme } from "./components/Textarea";
 import { menuTheme } from "./components/Menu";
 import { formErrorTheme } from "./components/FormError";
@@ -26,6 +27,7 @@ const components = {
   Input,
   Select,
   Checkbox,
+  Text,
   Textarea: textareaTheme,
   Menu: menuTheme,
   FormError: formErrorTheme,
