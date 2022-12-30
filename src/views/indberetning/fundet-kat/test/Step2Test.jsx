@@ -1,26 +1,18 @@
-import { Box, Heading, Button, Flex } from "@chakra-ui/react";
+import StepTemplate from "./StepTemplate";
 
-function Step2Test() {
+function Step2Test({ setCurrentStepIndex, onCallback }) {
+  const onCallback_2 = () => {
+    setCurrentStepIndex(6);
+  };
+
   return (
-    <Box>
-      <Heading as="h1" size="heading2">
-        Er katten i live?
-      </Heading>
-      <Flex gap={"2rem"}>
-        <Button
-          variant="testBtn"
-          onClick={() => setCurrentStepIndex(currenStepIndex + 1)}
-        >
-          Ja
-        </Button>
-        <Button
-          variant="testBtn"
-          onClick={() => setCurrentStepIndex(currenStepIndex + 1)}
-        >
-          Nej
-        </Button>
-      </Flex>
-    </Box>
+    <StepTemplate
+      heading={"Er katten i live?"}
+      btnText_1="Ja"
+      btnText_2={"Nej"}
+      onCallback_1={onCallback}
+      onCallback_2={onCallback_2}
+    />
   );
 }
 

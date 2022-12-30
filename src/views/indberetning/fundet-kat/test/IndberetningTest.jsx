@@ -17,9 +17,9 @@ function IndberetningTest() {
       <Box
         display={"grid"}
         justifyContent="center"
-        py={"4rem"}
+        //py={"4rem"}
         minH="100vh"
-        bg={"brand.lightGrey"}
+        //bg={"brand.lightGrey"}
       >
         <TestSteps />
       </Box>
