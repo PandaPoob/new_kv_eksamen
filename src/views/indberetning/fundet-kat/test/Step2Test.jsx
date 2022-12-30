@@ -1,8 +1,9 @@
 import StepTemplate from "./StepTemplate";
 
-function Step2Test({ setCurrentStepIndex, onCallback }) {
+function Step2Test({ setCurrentStepIndex, onCallback, setSkipped }) {
   const onCallback_2 = () => {
-    setCurrentStepIndex(6);
+    setSkipped(true);
+    setCurrentStepIndex(5);
   };
 
   return (

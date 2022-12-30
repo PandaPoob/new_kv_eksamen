@@ -5,9 +5,12 @@ import Step1Test from "./Step1Test";
 import Step2Test from "./Step2Test";
 import Step3Test from "./Step3Test";
 import Step4Test from "./Step4Test";
+import Step5Test from "./Step5Test";
+import Step6Test from "./Step6Test";
 
 function TestSteps() {
   const [currenStepIndex, setCurrentStepIndex] = useState(0);
+  const [skipped, setSkipped] = useState(false);
   const [result, setResult] = useState("");
 
   const onCallback = () => {
@@ -27,6 +30,7 @@ function TestSteps() {
         <Step2Test
           setCurrentStepIndex={setCurrentStepIndex}
           onCallback={onCallback}
+          setSkipped={setSkipped}
         />
       ),
     },
@@ -46,6 +50,19 @@ function TestSteps() {
         />
       ),
     },
+    {
+      component: (
+        <Step5Test
+          onCallback={onCallback}
+          onResultCallback={onResultCallback}
+        />
+      ),
+    },
+    {
+      component: (
+        <Step6Test onResultCallback={onResultCallback} skipped={skipped} />
+      ),
+    },
   ];
   return (
     <Box
@@ -59,6 +76,7 @@ function TestSteps() {
         <TestResult
           result={result}
           setCurrentStepIndex={setCurrentStepIndex}
+          setSkipped={setSkipped}
           setResult={setResult}
         />
       ) : (

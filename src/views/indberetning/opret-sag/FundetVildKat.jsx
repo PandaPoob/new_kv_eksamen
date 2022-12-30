@@ -19,7 +19,7 @@ function FundetVildKat() {
         eller kommunen, for at bestille en indfangning. Dette afhænger også af
         kommunens aftale med os.
       </Text>
-      <FindKommuneDrawer />
+      <FindKommuneDrawer heading={"Tjek din kommune"} />
     </Box>
   );
 }

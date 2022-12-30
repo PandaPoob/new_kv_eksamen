@@ -579,7 +579,7 @@ function VoresArbejde({ sideData }) {
               </NextLink>
               , og kan bruges frit.
             </Text>
-            <FindKommuneDrawer />
+            <FindKommuneDrawer heading={"Tjek din kommune"} />
           </Box>
         </Box>
       </Box>

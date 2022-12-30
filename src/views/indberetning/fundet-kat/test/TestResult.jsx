@@ -1,18 +1,216 @@
-import { Heading, Flex, Text, Icon, Button, Box } from "@chakra-ui/react";
+import {
+  Heading,
+  Flex,
+  Text,
+  Icon,
+  Button,
+  Box,
+  Link,
+  List,
+  ListIcon,
+  ListItem,
+} from "@chakra-ui/react";
 import { BsTelephone, BsEnvelope } from "react-icons/bs";
+import { ImDiamonds } from "react-icons/im";
+import NextLink from "next/link";
 import BukseTrick from "../BukseTrick";
+import FindKommuneDrawer from "../../../../components/features/FindKommuneDrawer";
 
-function TestResult({ result, setCurrentStepIndex, setResult }) {
+function TestResult({ result, setCurrentStepIndex, setSkipped, setResult }) {
   function resetTest() {
     setCurrentStepIndex(0);
+    setSkipped(false);
     setResult("");
   }
 
   function getResult() {
     if (result === 1) {
-      return null;
+      return (
+        <>
+          <Text variant={"testtext"}>
+            Når du finder en afdød kat, må du meget gerne sørge for at den er
+            lagt ind til siden/et sted hvor den ikke er udsat for trafik, hvis
+            muligt.
+          </Text>
+          <Text mt={"2rem"}>
+            Hvis katten er død men øremærket burde det ikke være svært at
+            identificere ejeren:
+          </Text>
+          <List
+            display={"grid"}
+            gap={{ base: "2.5rem", lg: "1.5rem" }}
+            mt={{ base: "1rem", lg: "1rem" }}
+          >
+            <ListItem
+              display={"flex"}
+              flexDir={{ base: "column", lg: "row" }}
+              gap={{ base: "1rem", lg: "0" }}
+              alignItems="center"
+              maxW="70ch"
+            >
+              <ListIcon
+                as={ImDiamonds}
+                fontSize={{ base: "md", lg: "xs" }}
+                color="brand.redCta"
+              />
+              <Text fontSize={"xxs"}>
+                Du kan kontakte Det Danske Katteregister tlf. 70 27 04 47 eller
+                på{" "}
+                <NextLink
+                  href="https://www.katteregister.dk/"
+                  passHref
+                  prefetch={false}
+                >
+                  <Link isExternal variant="exLink">
+                    www.katteregister.dk
+                  </Link>
+                </NextLink>
+                , da de kan hjælpe med at identificere ejer.
+              </Text>
+            </ListItem>
+            <ListItem
+              display={"flex"}
+              flexDir={{ base: "column", lg: "row" }}
+              gap={{ base: "1rem", lg: "0" }}
+              alignItems="center"
+              maxW="70ch"
+            >
+              <ListIcon
+                as={ImDiamonds}
+                fontSize={{ base: "md", lg: "xs" }}
+                color="brand.redCta"
+              />
+              <Text fontSize={"xxs"}>
+                Hvis katten ikke findes i Det Danske Katteregister, kan man
+                prøve hos{" "}
+                <NextLink
+                  href="https://www.dansk-katteregister.dk/catmissing/search"
+                  passHref
+                  prefetch={false}
+                >
+                  <Link isExternal variant="exLink">
+                    Dansk Katteregister
+                  </Link>
+                </NextLink>
+                . Her kan du søge på øremærke, også hvis ikke alle tegn er
+                aflæselige.
+              </Text>
+            </ListItem>
+            <ListItem
+              display={"flex"}
+              flexDir={{ base: "column", lg: "row" }}
+              gap={{ base: "1rem", lg: "0" }}
+              alignItems="center"
+              maxW="70ch"
+            >
+              <ListIcon
+                as={ImDiamonds}
+                fontSize={{ base: "md", lg: "xs" }}
+                color="brand.redCta"
+              />
+              <Text fontSize={"xxs"}>
+                Hvis katten er øremærket, er den højst sandsynligt også chippet.
+                Derfor kan du, hvis øremærket er ulæseligt, tage katten med til
+                nærmeste dyrlæge eller internat, som kan aflæse chippen og finde
+                ejeren.
+              </Text>
+            </ListItem>
+            <ListItem
+              display={"flex"}
+              flexDir={{ base: "column", lg: "row" }}
+              gap={{ base: "1rem", lg: "0" }}
+              alignItems="center"
+              maxW="70ch"
+            >
+              <ListIcon
+                as={ImDiamonds}
+                fontSize={{ base: "md", lg: "xs" }}
+                color="brand.redCta"
+              />
+              <Text fontSize={"xxs"}>
+                Du kan også kontakte din kommune, hvis katten er afgået ved
+                døden på grund af trafik, da det er dem der samler trafikdræbte
+                dyr op på vejene i Danmark.
+              </Text>
+            </ListItem>
+          </List>
+        </>
+      );
     } else if (result === 2) {
-      return null;
+      return (
+        <>
+          <Text variant={"testtext"}>
+            Når du finder en afdød kat, må du meget gerne sørge for at den er
+            lagt ind til siden/et sted hvor den ikke er udsat for trafik, hvis
+            muligt.
+          </Text>
+          <Text mt={"2rem"} maxW="70ch">
+            Det er desværre svært at identificere en kat og finde ejeren når
+            katten ikke har øremærke. Dog er der stadig en række ting du kan
+            forsøge:
+          </Text>
+          <List
+            display={"grid"}
+            gap={{ base: "2.5rem", lg: "1.5rem" }}
+            mt={{ base: "1rem", lg: "1rem" }}
+          >
+            <ListItem
+              display={"flex"}
+              flexDir={{ base: "column", lg: "row" }}
+              gap={{ base: "1rem", lg: "0" }}
+              alignItems="center"
+              maxW="70ch"
+            >
+              <ListIcon
+                as={ImDiamonds}
+                fontSize={{ base: "md", lg: "xs" }}
+                color="brand.redCta"
+              />
+              <Text fontSize={"xxs"}>
+                Du kan forhøre dig i diverse relevante Facebookgrupper om nogen
+                mangler deres kat.
+              </Text>
+            </ListItem>
+            <ListItem
+              display={"flex"}
+              flexDir={{ base: "column", lg: "row" }}
+              gap={{ base: "1rem", lg: "0" }}
+              alignItems="center"
+              maxW="70ch"
+            >
+              <ListIcon
+                as={ImDiamonds}
+                fontSize={{ base: "md", lg: "xs" }}
+                color="brand.redCta"
+              />
+              <Text fontSize={"xxs"}>
+                Selvom katten ikke har øremærke kan den stadig være chippet.
+                Derfor kan du, hvis muligt, tage katten med til nærmeste dyrlæge
+                eller internat, som kan hjælpe med at aflæse dette og finde
+                ejer.
+              </Text>
+            </ListItem>
+            <ListItem
+              display={"flex"}
+              flexDir={{ base: "column", lg: "row" }}
+              gap={{ base: "1rem", lg: "0" }}
+              alignItems="center"
+              maxW="70ch"
+            >
+              <ListIcon
+                as={ImDiamonds}
+                fontSize={{ base: "md", lg: "xs" }}
+                color="brand.redCta"
+              />
+              <Text fontSize={"xxs"}>
+                Hvis katten er afgået ved døden på grund af trafik, kan du
+                kontakte din kommune, da det er dem der samler trafikdræbte dyr
+                op på vejene i Danmark.
+              </Text>
+            </ListItem>
+          </List>
+        </>
+      );
     } else if (result === 3) {
       return (
         <>
@@ -148,6 +346,34 @@ function TestResult({ result, setCurrentStepIndex, setResult }) {
               <BukseTrick />
             </Box>
           </Box>
+        </>
+      );
+    } else if (result === 5) {
+      return (
+        <>
+          <Text variant={"testtext"}>
+            Det er højst sandsynligt en vildtlevende kat. Derfor anbefaler vi at
+            du kontakter Kattens Værns administration for at oprette en
+            indfangningssag.
+          </Text>
+
+          <Flex alignSelf={"center"} gap="1rem" mt={"1rem"}>
+            <FindKommuneDrawer heading={"Opret sag"} />
+            <NextLink
+              href={`/indberetning/opret-en-sag`}
+              passHref
+              prefetch={false}
+            >
+              <Link
+                //maxW={"10rem"}
+                variant={"blueBtn"}
+                textAlign={"center"}
+                mt={"1.5rem"}
+              >
+                Læs mere
+              </Link>
+            </NextLink>
+          </Flex>
         </>
       );
     }

@@ -58,7 +58,7 @@ function Itvivl() {
         maxW="45rem"
       >
         {" "}
-        <Heading as="h3" size="heading3" mb={"1rem"}>
+        <Heading as="h3" size="heading4" mb={"1rem"}>
           Kontakt os
         </Heading>
         <Divider orientation="horizontal" mb="2rem" />

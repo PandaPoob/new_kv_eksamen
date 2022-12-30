@@ -6,7 +6,7 @@ const KommuneDrawer = dynamic(() => import("./FindKommune"), {
   ssr: false,
 });
 
-function FindKommuneDrawer() {
+function FindKommuneDrawer({ heading }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -20,7 +20,7 @@ function FindKommuneDrawer() {
         variant="redBtn"
         mt={"1.5rem"}
       >
-        Tjek din kommune
+        {heading}
       </Button>
       {isLoaded && (
         <KommuneDrawer
