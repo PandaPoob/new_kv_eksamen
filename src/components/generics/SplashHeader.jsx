@@ -8,6 +8,7 @@ function SplashHeader({
   imgWebPos = "center",
   textPos = "left",
   height = "70vh",
+  btnVariant = "blueBtn",
 }) {
   const buttonChecker = () => {
     if (acf.buttonurl === "") {
@@ -82,7 +83,7 @@ function SplashHeader({
               maxW={"10rem"}
               alignSelf={textPos}
               justifyContent="center"
-              variant={"blueBtn"}
+              variant={btnVariant}
             >
               {acf.buttontekst}
             </Link>
