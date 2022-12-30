@@ -22,6 +22,7 @@ function TestResult({ result, setCurrentStepIndex, setSkipped, setResult }) {
     setCurrentStepIndex(0);
     setSkipped(false);
     setResult("");
+    window.scrollTo(0, 0);
   }
 
   function getResult() {
@@ -219,11 +220,9 @@ function TestResult({ result, setCurrentStepIndex, setSkipped, setResult }) {
             Hvis katten er alvorligt tilskadekommen skal du ringe til Dyrenes
             Vagtcentral.
           </Text>
-          <Text maxW="70ch">
-            Hvis du finder en tilskadekommen kat, f.eks. påkørt eller ved fald,
-            skal du ringe til Dyrenes Vagtcentral er en landsdækkende service,
-            som vejleder i sager om dyr i nød på 1812. De har døgnåbent året
-            rundt.
+          <Text maxW="70ch" mt={"2rem"}>
+            Dyrenes Vagtcentral er en landsdækkende service, som vejleder i
+            sager om dyr i nød på 1812. De har døgnåbent året rundt.
           </Text>
           <Flex
             mt={"1rem"}

@@ -3,6 +3,7 @@ const Text = {
     testtext: {
       fontWeight: "bold",
       maxWidth: "70ch",
+      textAlign: "center",
     },
   },
 };

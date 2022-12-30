@@ -28,11 +28,15 @@ function StepTemplate({
             alignItems="center"
             gap="1rem"
           >
-            <Heading as="h1" size={btnText_2 ? "heading3" : "heading2"}>
+            <Heading
+              as="h1"
+              size={btnText_2 ? "heading3" : "heading2"}
+              textAlign="center"
+            >
               {heading}
             </Heading>
             {children ? children : null}
-            <Flex gap={"2rem"}>
+            <Flex gap={{ base: "1rem", md: "2rem" }} flexWrap="wrap">
               <Button
                 alignSelf="center"
                 variant="testBtn"

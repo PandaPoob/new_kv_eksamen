@@ -18,6 +18,7 @@ function TestSteps() {
   };
 
   const onResultCallback = (value) => {
+    window.scrollTo(0, 0);
     setResult(value);
   };
 
@@ -68,7 +69,7 @@ function TestSteps() {
     <Box
       display={"grid"}
       justifyContent="center"
-      mt={result ? "2rem" : "-6rem"}
+      my={"2rem"}
       alignItems={"center"}
       mx="1rem"
     >
@@ -80,7 +81,7 @@ function TestSteps() {
           setResult={setResult}
         />
       ) : (
-        steps[currenStepIndex].component
+        <Box>{steps[currenStepIndex].component}</Box>
       )}
     </Box>
   );
