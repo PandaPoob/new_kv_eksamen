@@ -1,4 +1,5 @@
-import { Heading, Button, Flex } from "@chakra-ui/react";
+import { Heading, Button, Flex, Box } from "@chakra-ui/react";
+import { m, AnimatePresence } from "framer-motion";
 
 function StepTemplate({
   heading,
@@ -9,27 +10,46 @@ function StepTemplate({
   onCallback_2,
 }) {
   return (
-    <Flex
-      flexDir={"column"}
-      justifyContent="center"
-      alignItems="center"
-      gap="1rem"
-    >
-      <Heading as="h1" size={btnText_2 ? "heading3" : "heading2"}>
-        {heading}
-      </Heading>
-      {children ? children : null}
-      <Flex gap={"2rem"}>
-        <Button alignSelf="center" variant="testBtn" onClick={onCallback_1}>
-          {btnText_1}
-        </Button>
-        {btnText_2 && (
-          <Button variant="testBtn" onClick={onCallback_2}>
-            {btnText_2}
-          </Button>
-        )}
-      </Flex>
-    </Flex>
+    <>
+      <AnimatePresence>
+        <Box
+          as={m.div}
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+          }}
+          key="resultat"
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1, ease: "linear" }}
+        >
+          <Flex
+            flexDir={"column"}
+            justifyContent="center"
+            alignItems="center"
+            gap="1rem"
+          >
+            <Heading as="h1" size={btnText_2 ? "heading3" : "heading2"}>
+              {heading}
+            </Heading>
+            {children ? children : null}
+            <Flex gap={"2rem"}>
+              <Button
+                alignSelf="center"
+                variant="testBtn"
+                onClick={onCallback_1}
+              >
+                {btnText_1}
+              </Button>
+              {btnText_2 && (
+                <Button variant="testBtn" onClick={onCallback_2}>
+                  {btnText_2}
+                </Button>
+              )}
+            </Flex>
+          </Flex>
+        </Box>
+      </AnimatePresence>
+    </>
   );
 }
 

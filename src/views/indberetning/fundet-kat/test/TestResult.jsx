@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { BsTelephone, BsEnvelope } from "react-icons/bs";
 import { ImDiamonds } from "react-icons/im";
+import { m, AnimatePresence } from "framer-motion";
 import NextLink from "next/link";
 import BukseTrick from "../BukseTrick";
 import FindKommuneDrawer from "../../../../components/features/FindKommuneDrawer";
@@ -22,7 +23,7 @@ function TestResult({ result, setCurrentStepIndex, setSkipped, setResult }) {
     setSkipped(false);
     setResult("");
   }
-  console.log(result);
+
   function getResult() {
     if (result === 1) {
       return (
@@ -613,30 +614,45 @@ function TestResult({ result, setCurrentStepIndex, setSkipped, setResult }) {
   }
 
   return (
-    <Flex flexDir={"column"} justifyContent="center" mb={"4rem"}>
-      <Heading as="h1" size="heading2" alignSelf="center" mb="1rem">
-        Vi foreslår...
-      </Heading>
-      {getResult()}
+    <>
+      <AnimatePresence>
+        <Box
+          as={m.div}
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+          }}
+          key="resultat"
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1, ease: "linear" }}
+        >
+          <Flex flexDir={"column"} justifyContent="center" mb={"4rem"}>
+            <Heading as="h1" size="heading2" alignSelf="center" mb="1rem">
+              Vi foreslår...
+            </Heading>
+            {getResult()}
 
-      <Flex alignItems={"center"} mt="3rem" alignSelf={"center"}>
-        <Text>
-          Ikke sikker på det resultat du fik? Tag testen igen{" "}
-          <Button
-            variant="clean"
-            fontSize="xs"
-            px="0"
-            verticalAlign="normal"
-            minW={"unset"}
-            h="unset"
-            onClick={() => resetTest()}
-          >
-            her
-          </Button>
-          .
-        </Text>
-      </Flex>
-    </Flex>
+            <Flex alignItems={"center"} mt="3rem" alignSelf={"center"}>
+              <Text>
+                Ikke sikker på det resultat du fik? Tag testen igen{" "}
+                <Button
+                  variant="clean"
+                  fontSize="xs"
+                  px="0"
+                  verticalAlign="normal"
+                  minW={"unset"}
+                  h="unset"
+                  onClick={() => resetTest()}
+                >
+                  her
+                </Button>
+                .
+              </Text>
+            </Flex>
+          </Flex>
+        </Box>
+      </AnimatePresence>
+    </>
   );
 }
 
