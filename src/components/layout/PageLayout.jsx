@@ -8,7 +8,7 @@ function PageLayout({ children }) {
         maxW={"none"}
         mx={0}
         p={0}
-        mt={"5rem"}
+        mt={{ base: "4.5rem", navbp: "5rem" }}
         minH={"100vh"}
       >
         {children}
