@@ -101,15 +101,16 @@ function Nav({ children }) {
   }, [oldScrollPosition]);
 
   function getTopValue() {
-    // hvis vi ruller op eller lige er loaded eller basketchanged set nav til at blive vist
+    // hvis vi ruller op eller lige er loaded
     if (isScrolling === "true" || isScrolling === "default") {
-      // setBasketChanged(false)
+      return "0";
+    } else if (oldScrollPosition <= 0) {
       return "0";
     } else {
       return "-5.1rem";
     }
   }
-
+  console.log(oldScrollPosition);
   return (
     <>
       <Box
