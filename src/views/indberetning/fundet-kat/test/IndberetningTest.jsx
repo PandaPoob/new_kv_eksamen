@@ -1,5 +1,5 @@
 import PageLayout from "../../../../components/layout/PageLayout";
-import { Box, Heading } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import Head from "next/head";
 import TestSteps from "./TestSteps";
 
@@ -14,13 +14,7 @@ function IndberetningTest() {
           content="Har du fundet en kat og er ikke sikker på hvad du skal gøre så tjek det her"
         />
       </Head>
-      <Box
-        display={"grid"}
-        justifyContent="center"
-        //py={"4rem"}
-        minH="100vh"
-        //bg={"brand.lightGrey"}
-      >
+      <Box display={"grid"} justifyContent="center" minH="100vh">
         <TestSteps />
       </Box>
     </PageLayout>

@@ -4,6 +4,7 @@ import TestResult from "./TestResult";
 import Step1Test from "./Step1Test";
 import Step2Test from "./Step2Test";
 import Step3Test from "./Step3Test";
+import Step4Test from "./Step4Test";
 
 function TestSteps() {
   const [currenStepIndex, setCurrentStepIndex] = useState(0);
@@ -37,12 +38,20 @@ function TestSteps() {
         />
       ),
     },
+    {
+      component: (
+        <Step4Test
+          onCallback={onCallback}
+          onResultCallback={onResultCallback}
+        />
+      ),
+    },
   ];
   return (
     <Box
       display={"grid"}
       justifyContent="center"
-      mt="-6rem"
+      mt={result ? "2rem" : "-6rem"}
       alignItems={"center"}
       mx="1rem"
     >
