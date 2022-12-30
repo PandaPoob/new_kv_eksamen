@@ -24,7 +24,10 @@ export default function VoresArbejde(props) {
       >
         <Image
           priority="true"
-          src={useBreakpointValue({ base: infoGrafikMob, lg: infoGrafikDesk })}
+          src={useBreakpointValue(
+            { base: infoGrafikMob, lg: infoGrafikDesk },
+            { ssr: true }
+          )}
           alt={"Genudsætning"}
           layout="fill"
           objectFit="contain"

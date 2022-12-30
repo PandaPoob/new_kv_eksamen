@@ -24,7 +24,10 @@ function FilterOptions({
   setMiljoFilter,
   setAlderFilter,
 }) {
-  const isMobile = useBreakpointValue({ base: true, navbp: false });
+  const isMobile = useBreakpointValue(
+    { base: true, navbp: false },
+    { ssr: true }
+  );
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [isLoaded, setIsLoaded] = useState(false);
 

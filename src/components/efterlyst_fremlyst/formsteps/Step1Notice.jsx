@@ -17,7 +17,7 @@ import GodkendtTxt from "../../../assets/images/cattxtright.webp";
 import IkkeGodkendtTxt from "../../../assets/images/cattxtwrong.webp";
 
 function Step1Notice() {
-  const isMobile = useBreakpointValue({ base: true, lg: false });
+  const isMobile = useBreakpointValue({ base: true, lg: false }, { ssr: true });
   return (
     <Box>
       {isMobile ? (

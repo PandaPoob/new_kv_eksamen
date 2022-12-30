@@ -29,7 +29,10 @@ function EFFilterOptions({
   setSearchInput,
   searchInput,
 }) {
-  const isMobile = useBreakpointValue({ base: true, navbp: false });
+  const isMobile = useBreakpointValue(
+    { base: true, navbp: false },
+    { ssr: true }
+  );
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [isLoaded, setIsLoaded] = useState(false);
   //filteroption data hardcoded

@@ -23,11 +23,14 @@ export default function Banner() {
     },
   ];
 
-  const dividerOrientation = useBreakpointValue({
-    base: "horizontal",
-    md: "horizontal",
-    lg: "vertical",
-  });
+  const dividerOrientation = useBreakpointValue(
+    {
+      base: "horizontal",
+      md: "horizontal",
+      lg: "vertical",
+    },
+    { ssr: true }
+  );
 
   return (
     <Box

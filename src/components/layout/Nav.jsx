@@ -78,7 +78,10 @@ function Nav({ children }) {
       ],
     },
   ];
-  const isMobile = useBreakpointValue({ base: true, navbp: false });
+  const isMobile = useBreakpointValue(
+    { base: true, navbp: false },
+    { ssr: true }
+  );
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [isMenuLoaded, setIsMenuLoaded] = useState(false);
   const [oldScrollPosition, setOldScrollPosition] = useState(0);
@@ -110,7 +113,7 @@ function Nav({ children }) {
       return "-5.1rem";
     }
   }
-  console.log(oldScrollPosition);
+
   return (
     <>
       <Box

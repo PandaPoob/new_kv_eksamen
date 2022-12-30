@@ -13,10 +13,13 @@ export default function LinkBanner({ data }) {
   //remove empty entries (false)
   const cleanBannerDataArr = bannerDataArr.filter((t) => t.item !== false);
 
-  const dividerOrientation = useBreakpointValue({
-    base: "horizontal",
-    md: "vertical",
-  });
+  const dividerOrientation = useBreakpointValue(
+    {
+      base: "horizontal",
+      md: "vertical",
+    },
+    { ssr: true }
+  );
 
   return (
     <Box
