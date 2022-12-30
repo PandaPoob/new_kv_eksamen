@@ -22,7 +22,7 @@ function TestResult({ result, setCurrentStepIndex, setSkipped, setResult }) {
     setSkipped(false);
     setResult("");
   }
-
+  console.log(result);
   function getResult() {
     if (result === 1) {
       return (
@@ -374,6 +374,239 @@ function TestResult({ result, setCurrentStepIndex, setSkipped, setResult }) {
               </Link>
             </NextLink>
           </Flex>
+        </>
+      );
+    } else if (result === 6) {
+      return (
+        <>
+          <Text variant={"testtext"}>
+            Hvis katten er tam og har mærke/chip, er der mange måder du kan
+            identificere ejer på:
+          </Text>
+
+          <List
+            display={"grid"}
+            gap={{ base: "2.5rem", lg: "1.5rem" }}
+            mt={{ base: "1rem", lg: "1rem" }}
+          >
+            <ListItem
+              display={"flex"}
+              flexDir={{ base: "column", lg: "row" }}
+              gap={{ base: "1rem", lg: "0" }}
+              alignItems="center"
+              maxW="70ch"
+            >
+              <ListIcon
+                as={ImDiamonds}
+                fontSize={{ base: "md", lg: "xs" }}
+                color="brand.redCta"
+              />
+              <Text fontSize={"xxs"}>
+                Kontakt Det Danske Katteregister på tlf. 70 27 04 47 eller på{" "}
+                <NextLink
+                  href="https://www.katteregister.dk/"
+                  passHref
+                  prefetch={false}
+                >
+                  <Link isExternal variant="exLink">
+                    www.katteregister.dk
+                  </Link>
+                </NextLink>
+                , da de kan hjælpe med at identificere ejer.{" "}
+              </Text>
+            </ListItem>
+
+            <ListItem
+              display={"flex"}
+              flexDir={{ base: "column", lg: "row" }}
+              gap={{ base: "1rem", lg: "0" }}
+              alignItems="center"
+              maxW="70ch"
+            >
+              <ListIcon
+                as={ImDiamonds}
+                fontSize={{ base: "md", lg: "xs" }}
+                color="brand.redCta"
+              />
+              <Text fontSize={"xxs"}>
+                Hvis katten ikke findes i Det Danske Katteregister, kan du prøve
+                hos{" "}
+                <NextLink
+                  href="https://www.dansk-katteregister.dk/catmissing/search"
+                  passHref
+                  prefetch={false}
+                >
+                  <Link isExternal variant="exLink">
+                    {" "}
+                    Dansk Katteregister
+                  </Link>
+                </NextLink>
+                .
+              </Text>
+            </ListItem>
+            <ListItem
+              display={"flex"}
+              flexDir={{ base: "column", lg: "row" }}
+              gap={{ base: "1rem", lg: "0" }}
+              alignItems="center"
+              maxW="70ch"
+            >
+              <ListIcon
+                as={ImDiamonds}
+                fontSize={{ base: "md", lg: "xs" }}
+                color="brand.redCta"
+              />
+              <Text fontSize={"xxs"}>
+                Du kan også tage katten til nærmeste dyrelæge eller internat som
+                kan hjælpe med at identificere ejer, hvis katten er chippet.
+                Dette er den højst sandsynligt, hvis den også er øremærket.
+              </Text>
+            </ListItem>
+          </List>
+          <Text mt={"2rem"} fontSize={"xxs"} maxW="75ch">
+            Kattens Værn tager som udgangspunkt ikke chippede eller mærkede
+            katte ind, da vores arbejde primært fokuserer på de herreløse katte,
+            og mærket/chippen betyder at de har en registreret ejer.
+          </Text>
+        </>
+      );
+    } else if (result === 7) {
+      return (
+        <>
+          <Text variant={"testtext"}>
+            Hvis katten er tam og ikke har mærke/chip, er der stadig måder at
+            identificere ejer på:{" "}
+          </Text>
+
+          <List
+            display={"grid"}
+            gap={{ base: "2.5rem", lg: "1.5rem" }}
+            mt={{ base: "1rem", lg: "1rem" }}
+          >
+            <ListItem
+              display={"flex"}
+              flexDir={{ base: "column", lg: "row" }}
+              gap={{ base: "1rem", lg: "0" }}
+              alignItems="center"
+              maxW="70ch"
+            >
+              <ListIcon
+                as={ImDiamonds}
+                fontSize={{ base: "md", lg: "xs" }}
+                color="brand.redCta"
+              />
+              <Text fontSize={"xxs"}>
+                Tjek om katten er efterlyst hos os{" "}
+                <NextLink
+                  href="/efterlysning/efterlyste-katte"
+                  passHref
+                  prefetch={false}
+                >
+                  <Link variant="inLink" fontSize={"xxs"}>
+                    her
+                  </Link>
+                </NextLink>
+                .
+              </Text>
+            </ListItem>
+
+            <ListItem
+              display={"flex"}
+              flexDir={{ base: "column", lg: "row" }}
+              gap={{ base: "1rem", lg: "0" }}
+              alignItems="center"
+              maxW="70ch"
+            >
+              <ListIcon
+                as={ImDiamonds}
+                fontSize={{ base: "md", lg: "xs" }}
+                color="brand.redCta"
+              />
+              <Text fontSize={"xxs"}>
+                {" "}
+                Hvis du ikke fandt en efterlysning der matchede den kat du har
+                fundet så overvej at lave en fremlysning hos os{" "}
+                <NextLink
+                  href="/indberetning/fremlys-kat"
+                  passHref
+                  prefetch={false}
+                >
+                  <Link variant="inLink" fontSize={"xxs"}>
+                    her
+                  </Link>
+                </NextLink>
+                .
+              </Text>
+            </ListItem>
+
+            <ListItem
+              display={"flex"}
+              flexDir={{ base: "column", lg: "row" }}
+              gap={{ base: "1rem", lg: "0" }}
+              alignItems="center"
+              maxW="70ch"
+            >
+              <ListIcon
+                as={ImDiamonds}
+                fontSize={{ base: "md", lg: "xs" }}
+                color="brand.redCta"
+              />
+              <Text fontSize={"xxs"}>
+                Hæng opslag op i området, hvor du spørger om nogen kender
+                katten. Hør eventuelt også dine naboer om der er nogen der
+                genkender den.
+              </Text>
+            </ListItem>
+            <ListItem
+              display={"flex"}
+              flexDir={{ base: "column", lg: "row" }}
+              gap={{ base: "1rem", lg: "0" }}
+              alignItems="center"
+              maxW="70ch"
+            >
+              <ListIcon
+                as={ImDiamonds}
+                fontSize={{ base: "md", lg: "xs" }}
+                color="brand.redCta"
+              />
+              <Text fontSize={"xxs"}>
+                Brug internettet til at fremlyse katten. Bl.a. i diverse
+                Facebook eller hjemmesider som{" "}
+                <NextLink
+                  href="https://kattegale.dk/"
+                  passHref
+                  prefetch={false}
+                >
+                  <Link isExternal variant="exLink">
+                    kattegale.dk
+                  </Link>
+                </NextLink>
+                , eller på{" "}
+                <NextLink
+                  href="https://www.dyrenesbeskyttelse.dk/fremlysning/opret"
+                  passHref
+                  prefetch={false}
+                >
+                  <Link isExternal variant="exLink">
+                    Dyrenes beskyttelse
+                  </Link>
+                </NextLink>
+              </Text>
+            </ListItem>
+          </List>
+          <Text mt={"2rem"} fontSize={"xxs"} maxW="75ch">
+            Hvis ingen reagerer, kan du vælge at tage katten til dig, eller du
+            kan forhøre dig ad, om der er plads på et af vores eller andre
+            dyreværnsorganisationers internater. Du kan også selv forsøge at
+            finde et nyt hjem til den. <br />
+            <br /> Du bør først tage katten til dig, når du har forsøgt at finde
+            dens retmæssige ejer. Hvis det var din kat, der var løbet væk, ville
+            du sandsynligvis også sætte pris på, at der blev gjort en indsats
+            for at forene dig med din kat, inden den fik lov til at blive. De
+            fleste internater og dyrlæger går efter tommelfingerreglen om, at
+            man fremlyser alt hvad man kan i minimum én uge, før man må overtage
+            katten eller overdrage den til andre.
+          </Text>
         </>
       );
     }

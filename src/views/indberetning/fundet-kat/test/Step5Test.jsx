@@ -15,7 +15,7 @@ function Step5Test({ onCallback, onResultCallback }) {
       onCallback_2={onCallback_2}
     >
       <Text variant="testtext">
-        Hvis katten enten er aggresiv eller ikke er til at få fat på tryk ja
+        Hvis katten enten er aggresiv eller ikke er til at få fat på tryk nej.
       </Text>
     </StepTemplate>
   );
