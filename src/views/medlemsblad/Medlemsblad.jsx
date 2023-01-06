@@ -5,7 +5,7 @@ import PageHead from "../../components/layout/PageHead";
 import SplashHeader from "../../components/generics/SplashHeader";
 import Medlemsblade from "./Medlemsblade";
 
-function Medlemsblad({ sideData }) {
+function Medlemsblad({ sideData, data }) {
   return (
     <PageLayout>
       <PageHead {...sideData} />
@@ -43,7 +43,7 @@ function Medlemsblad({ sideData }) {
           </Text>
         </Flex>
       </Flex>
-      <Medlemsblade />
+      <Medlemsblade data={data} />
     </PageLayout>
   );
 }

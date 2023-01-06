@@ -1,5 +1,6 @@
 import { Select } from "@chakra-ui/react";
-import { BsCheck2, BsChevronDown } from "react-icons/bs";
+import { BsChevronDown } from "react-icons/bs";
+
 function SelectDropdown({ onCallback, placeholder, options }) {
   return (
     <Select

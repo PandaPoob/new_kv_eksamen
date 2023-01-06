@@ -19,6 +19,35 @@ const Select = {
         },
       },
     },
+
+    filled: {
+      field: {
+        borderRadius: "0.2rem",
+        border: "1px solid",
+        borderColor: "brand.borderGrey",
+        pb: 0,
+        p: 0,
+        maxW: "12rem",
+        bg: "white",
+        color: "brand.redCta",
+        height: "auto",
+        fontSize: { base: "lg", lg: "xl" },
+        fontFamily: "heading",
+        _hover: {
+          borderColor: "brand.borderGrey",
+          boxShadow: "none",
+          cursor: "pointer",
+          bg: "white",
+        },
+        _focus: {
+          bg: "white",
+        },
+
+        "> option, > optgroup": {
+          borderRadius: 0,
+        },
+      },
+    },
   },
 };
 export default Select;
