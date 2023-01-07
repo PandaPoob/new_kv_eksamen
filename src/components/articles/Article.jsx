@@ -2,6 +2,7 @@ import Image from "next/image";
 import NextLink from "next/link";
 import { Box, Heading, Text, Link, Flex, Icon, chakra } from "@chakra-ui/react";
 import { ImDiamonds } from "react-icons/im";
+//import { load } from "/baggrund_stor.svg";
 
 function Article({ acf, id }) {
   return (
@@ -31,11 +32,8 @@ function Article({ acf, id }) {
           borderTopRadius="0.2rem"
           overflow="hidden"
         >
-          <Box position="relative" minH={"14rem"} width={"100%"}>
+          <Box position="relative" minH={"14rem"} width={"100%"} bg="darkGrey">
             <Image
-              style={{ backgroundImage: "/baggrund_stor.svg" }}
-              placeholder={"blur"}
-              blurDataURL={acf.profil_billede}
               src={acf.profil_billede}
               alt={acf.navn}
               layout="fill"
