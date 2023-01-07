@@ -1,9 +1,8 @@
 import { Box, Heading, Text, Flex } from "@chakra-ui/react";
 import Image from "next/image";
 import BilledeSektion from "./BilledeSektion";
-import SektionEt from "./SektionEt";
-import SektionTo from "./SektionTo";
-import SektionTre from "./SektionTre";
+import Sektion from "./Sektion";
+
 
 function ArtikelSide({ nyhedsData }) {
 const acf = nyhedsData.acf;
@@ -30,9 +29,9 @@ const acf = nyhedsData.acf;
           {acf.undertitel === "" ? <></> : <Text>{acf.undertitel}</Text>}
         </Flex>
       </Box>
-      <SektionEt sektionData={acf.sektionet} eksternlink={acf.eksternlink} linkurl={acf.linkurl} />
-      {acf.sektionto_tf === true ? <SektionTo sektionData={acf.sektionto} /> : null}
-      {acf.sektiontre_tf === true ? <SektionTre sektionData={acf.sektiontre} /> : null}
+      <Sektion sektionData={acf.sektionet} eksternlink={acf.eksternlink} linkurl={acf.linkurl} />
+      {acf.sektionto_tf === true ? <Sektion type={acf.sektionto_tf} sektionData={acf.sektionto} /> : null}
+      {acf.sektiontre_tf === true ? <Sektion sektionData={acf.sektiontre} /> : null}
       {acf.ekstra_billeder === true ? <BilledeSektion sektionData={acf.billedesektion} /> : null}
     </Box>
   );
