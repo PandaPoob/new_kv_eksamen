@@ -9,6 +9,7 @@ function SplashHeader({
   textPos = "left",
   height = "70vh",
   btnVariant = "blueBtn",
+  h1WordBreak = "normal",
 }) {
   const buttonChecker = () => {
     if (acf.buttonurl === "") {
@@ -64,7 +65,11 @@ function SplashHeader({
             {acf.overtekst}
           </Heading>
         )}
-        <Heading as={"h1"} size={{ base: h1mobsize, lg: "heading1" }}>
+        <Heading
+          wordBreak={{ base: h1WordBreak, lg: "normal" }}
+          as={"h1"}
+          size={{ base: h1mobsize, lg: "heading1" }}
+        >
           {acf.overskrift}
         </Heading>
         <Text>
