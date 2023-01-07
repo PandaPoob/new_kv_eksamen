@@ -21,12 +21,13 @@ const Select = {
     },
 
     filled: {
+      fontFamily: "heading",
       field: {
         borderRadius: "0.2rem",
         border: "1px solid",
         borderColor: "brand.borderGrey",
-        pb: 0,
-        p: 0,
+        p: "0.5rem 1rem",
+        px: "1rem",
         maxW: "12rem",
         bg: "white",
         color: "brand.redCta",
@@ -45,6 +46,9 @@ const Select = {
 
         "> option, > optgroup": {
           borderRadius: 0,
+          color: "brand.redCta",
+          fontSize: "sm",
+          fontFamily: "heading",
         },
       },
     },
