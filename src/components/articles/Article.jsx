@@ -1,6 +1,6 @@
 import Image from "next/image";
 import NextLink from "next/link";
-import { Box, Heading, Text, Link, Flex, Icon } from "@chakra-ui/react";
+import { Box, Heading, Text, Link, Flex, Icon, chakra } from "@chakra-ui/react";
 import { ImDiamonds } from "react-icons/im";
 
 function Article({ acf, id }) {
@@ -40,6 +40,7 @@ function Article({ acf, id }) {
               alt={acf.navn}
               layout="fill"
               objectFit="cover"
+              sizes="20rem"
             />
           </Box>
 
