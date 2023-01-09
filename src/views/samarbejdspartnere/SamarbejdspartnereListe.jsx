@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Flex, Divider, Icon } from "@chakra-ui/react";
+import { Box, Heading, Text, Flex } from "@chakra-ui/react";
 
 function SamarbejdspartnereListe({ heading, data }) {
   console.log(data);
