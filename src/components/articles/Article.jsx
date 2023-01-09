@@ -32,7 +32,12 @@ function Article({ acf, id }) {
           borderTopRadius="0.2rem"
           overflow="hidden"
         >
-          <Box position="relative" minH={"14rem"} width={"100%"} bg="darkGrey">
+          <Box
+            position="relative"
+            minH={"14rem"}
+            width={"100%"}
+            bg="brand.darkGrey"
+          >
             <Image
               src={acf.profil_billede}
               alt={acf.navn}

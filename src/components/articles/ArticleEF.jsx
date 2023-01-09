@@ -40,14 +40,18 @@ function ArticleEF({ acf, id, type, url }) {
           borderTopRadius="0.2rem"
           overflow="hidden"
         >
-          <Box position="relative" minH={"13rem"} width={"100%"}>
+          <Box
+            position="relative"
+            minH={"13rem"}
+            width={"100%"}
+            bg="brand.darkGrey"
+          >
             <Image
-              placeholder={"blur"}
-              blurDataURL={acf.billede}
               src={acf.billede}
               alt={acf.navn}
               layout="fill"
               objectFit="cover"
+              sizes="20rem"
             />
           </Box>
           <Flex
