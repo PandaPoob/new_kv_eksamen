@@ -1,5 +1,6 @@
 import url from "../api/url";
 import ForsideIndhold from "../views/forside/ForsideIndhold";
+import { useEffect } from "react";
 
 function Home({ sideData, katteData, nyhedsData }) {
   useEffect(() => {
