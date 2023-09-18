@@ -109,7 +109,7 @@ function FindKommune({ isOpen, onCloseComplete, onClose }) {
                   <InputControl
                     minH="6rem"
                     name="kommune"
-                    label="  Find din kommunes aftale med Kattens Værn"
+                    label="  Find din kommunes aftale med Kattens Værdier"
                     inputProps={{
                       autoComplete: "off",
                       borderEndRadius: "0",

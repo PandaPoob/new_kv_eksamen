@@ -15,7 +15,7 @@ export default function InfoBokse() {
       display={"grid"}
       gridTemplateColumns={{ lg: "1fr 1fr" }}
       gap={{ base: "2rem", lg: "4rem" }}
-      maxW={{base: "70ch", lg: "container.xl"}}
+      maxW={{ base: "70ch", lg: "container.xl" }}
       m="auto"
       pb="6rem"
       px="1rem"
@@ -41,8 +41,8 @@ export default function InfoBokse() {
           have, som gave, direkte hjem til din adresse.
         </Text>
         <Text>
-          For hver tilmelding donerer Royal Canin også 25 kr. til Kattens Værns
-          arbejde med Danmarks katte.
+          For hver tilmelding donerer Royal Canin også 25 kr. til Kattens
+          Værdier arbejde med Danmarks katte.
         </Text>
       </Box>
       <Box bg="brand.lightGrey" p="2rem" borderRadius={"0.3rem"}>

@@ -5,26 +5,26 @@ function ContactBox({ internat }) {
   function getKontaktInfo() {
     if (internat === "Aalborg") {
       return {
-        email: "aalborg@kattens-vaern.dk",
-        tlf: "38881200",
+        email: "aalborg@kattemail.dk",
+        tlf: "00000000",
         tlfTid: [{ dage: "Man-Fre", tidsrum: "10:00-12:00" }],
       };
     } else if (internat === "Billund") {
       return {
-        email: "billund@kattens-vaern.dk",
-        tlf: "38881200",
+        email: "billund@kattemail.dk",
+        tlf: "00000000",
         tlfTid: [{ dage: "Man-Fre", tidsrum: "10:00-12:00" }],
       };
     } else if (internat === "Brondby") {
       return {
-        email: "Internat@kattens-vaern.dk",
-        tlf: "38881200",
+        email: "Internat@kattemail.dk",
+        tlf: "00000000",
         tlfTid: [{ dage: "Man-Fre", tidsrum: "10:00-12:00" }],
       };
     } else {
       return {
-        email: "kvslagelse@gmail.com",
-        tlf: "38881200",
+        email: "kvslagelse@kattemail.dk",
+        tlf: "00000000",
         tlfTid: [
           { dage: "Man, Ons, Tors", tidsrum: "13:00-15:00" },
           { dage: "Fre", tidsrum: "13:00-14:30" },

@@ -265,7 +265,7 @@ function KontaktInfoForm({
                         minH="6rem"
                         inputProps={{
                           autoComplete: "off",
-                          placeholder: "Kattens Værn",
+                          placeholder: "Kattens Værdier",
                         }}
                         labelProps={{
                           mt: "1rem",

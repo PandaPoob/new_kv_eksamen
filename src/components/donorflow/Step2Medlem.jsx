@@ -139,14 +139,14 @@ function Step2Medlem({ step2Info, setStep2Info, setCurrentStepIndex }) {
               Tilmeld betalingsservice{" "}
             </Heading>
             <Text fontSize="xxs" mb="2rem">
-              Kattens Værn er fritaget for gave- og boafgift, så
+              Kattens Værdier er fritaget for gave- og boafgift, så
               gavebeløb/donationer op til 17.000 kroner årligt er
               fradragsberettigede.Når du oplyser dit CPR-nummer, bliver beløbet
               automatisk registreret hos Skat. <br />
               <br /> Hvis du ikke ønsker at oplyse dit CPR-nummer ved
               betalingen, men stadig ønsker at benytte dig af dit fradrag, skal
               du sende en mail til kv@kattens-vaern.dk med dit navn, adresse og
-              CPR-nummer, eller ringe til os på 38 88 12 00, lokal 1.
+              CPR-nummer, eller ringe til os på 00 00 00 00, lokal 1.
             </Text>
 
             <InputControl minH="5.8rem" name="cprnr" label="CPR-nummer" />

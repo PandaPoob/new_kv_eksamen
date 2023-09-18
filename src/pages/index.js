@@ -1,11 +1,17 @@
 import url from "../api/url";
 import ForsideIndhold from "../views/forside/ForsideIndhold";
 
-function Home({sideData, katteData, nyhedsData}) {
+function Home({ sideData, katteData, nyhedsData }) {
+  useEffect(() => {
+    alert("Dette er et eksamensprojekt. Det er ikke en officiel hjemmeside.");
+  }, []);
 
-  
   return (
-    <ForsideIndhold sideData={sideData} katteData={katteData} nyhedsData={nyhedsData}/>
+    <ForsideIndhold
+      sideData={sideData}
+      katteData={katteData}
+      nyhedsData={nyhedsData}
+    />
   );
 }
 

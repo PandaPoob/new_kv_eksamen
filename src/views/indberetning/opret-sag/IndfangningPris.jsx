@@ -60,9 +60,10 @@ function IndfangningsPris() {
               katteAIDS/-Leukæmi og behandling af eventuelle øremider. Katten
               bliver samtidig også registreret i Det Danske Katteregister.{" "}
               <br /> <br />
-              Kattens Værn dækker selv den resterende del af dyrlægens udgifter
-              til katte, der skal genudsættes. Vores genudsætningsprogram er den
-              eneste velfungerende løsning for de vilde katte i Danmark.
+              Kattens Værdier dækker selv den resterende del af dyrlægens
+              udgifter til katte, der skal genudsættes. Vores
+              genudsætningsprogram er den eneste velfungerende løsning for de
+              vilde katte i Danmark.
             </Text>
             <NextLink
               href={`/indberetning/bliv-fodervaert`}

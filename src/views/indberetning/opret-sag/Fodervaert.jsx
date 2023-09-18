@@ -16,12 +16,12 @@ function Fodervaert() {
       </Heading>
       <Text>
         Hvis katten viser sig at være tam og ingen ejer melder sig efter 5 dages
-        fremlysning, vil Kattens Værn finde et nyt godt hjem til den via vores
-        internater. <br /> <br /> Men hvis katten viser sig at være en oprigtig
-        vild kat og ikke er for syg eller er tilskadekommen kan den blive
-        genudsat. Dette kræver dog en fodervært, da katte ikke kan klare sig
-        selv i den danske natur. En foderværts ansvar vil være at sørge for mad,
-        vand og læ. Vores genudsætningsprogram er den eneste velfungerende
+        fremlysning, vil Kattens Værdier finde et nyt godt hjem til den via
+        vores internater. <br /> <br /> Men hvis katten viser sig at være en
+        oprigtig vild kat og ikke er for syg eller er tilskadekommen kan den
+        blive genudsat. Dette kræver dog en fodervært, da katte ikke kan klare
+        sig selv i den danske natur. En foderværts ansvar vil være at sørge for
+        mad, vand og læ. Vores genudsætningsprogram er den eneste velfungerende
         løsning for de vilde katte i Danmark, og derfor anbefaler vi stærkt at
         overveje det.
       </Text>

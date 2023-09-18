@@ -353,7 +353,7 @@ function TestResult({ result, setCurrentStepIndex, setSkipped, setResult }) {
         <>
           <Text variant={"testtext"}>
             Det er højst sandsynligt en vildtlevende kat. Derfor anbefaler vi at
-            du kontakter Kattens Værns administration for at oprette en
+            du kontakter Kattens Værdier administration for at oprette en
             indfangningssag.
           </Text>
 
@@ -464,7 +464,7 @@ function TestResult({ result, setCurrentStepIndex, setSkipped, setResult }) {
             </ListItem>
           </List>
           <Text mt={"2rem"} fontSize={"xxs"} maxW="75ch">
-            Kattens Værn tager som udgangspunkt ikke chippede eller mærkede
+            Kattens Værdier tager som udgangspunkt ikke chippede eller mærkede
             katte ind, da vores arbejde primært fokuserer på de herreløse katte,
             og mærket/chippen betyder at de har en registreret ejer.
           </Text>

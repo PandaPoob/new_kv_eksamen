@@ -13,7 +13,7 @@ export default function InfoSection({ acf }) {
       <Box
         display={"grid"}
         gridTemplateColumns={{ base: "1fr", lg: "1fr 1fr" }}
-        maxW={{base:"70ch", lg:"container.xl"}}
+        maxW={{ base: "70ch", lg: "container.xl" }}
         m="auto"
         gap={{ base: "2rem", lg: "4rem" }}
       >
@@ -22,10 +22,10 @@ export default function InfoSection({ acf }) {
             Dine penge gør en forskel
           </Heading>
           <Text>
-            Når du støtter Kattens Værn, går så meget som muligt af din støtte
-            direkte til kattene. Vores internater og inspektørtjeneste udgør
-            tilsammen rundt regnet 70 procent af vores samlede udgifter. Det er
-            det direkte arbejde med kattene, der koster. Hver gang vores
+            Når du støtter Kattens Værdier, går så meget som muligt af din
+            støtte direkte til kattene. Vores internater og inspektørtjeneste
+            udgør tilsammen rundt regnet 70 procent af vores samlede udgifter.
+            Det er det direkte arbejde med kattene, der koster. Hver gang vores
             inspektører kører ud, er det din støtte, der gør det muligt. Hverken
             kommuneaftaler eller de private udgifter til indfangning, dækker de
             reelle udgifter, som vi har. Hver kat, der får nyt hjem gennem vores

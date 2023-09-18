@@ -12,7 +12,7 @@ import { FaTiktok } from "react-icons/fa";
 function Footer({ children }) {
   const footerData = [
     {
-      titel: "Kattens Værn",
+      titel: "Kattens Værdier",
       subTitel: [
         { navn: "Sponsorer", link: "/gor-en-forskel/sponsorer" },
         { navn: "Samarbejdspartnere", link: "/samarbejdspartnere" },
@@ -74,7 +74,7 @@ function Footer({ children }) {
                 />
               </Flex>
               <Text as="dd" color="brand.white">
-                kv@kattens-vaern.dk
+                kv@kattemail.dk
               </Text>
             </Flex>
             <Flex as={"dl"} alignItems={"center"} gap="0.8rem">
@@ -88,7 +88,7 @@ function Footer({ children }) {
                 />
               </Flex>
               <Text as="dd" color="brand.white">
-                +45 38 88 12 00
+                +45 00 00 00 00
               </Text>
             </Flex>
             <Flex
@@ -103,7 +103,7 @@ function Footer({ children }) {
               </Text>
 
               <Text as="dd" color="brand.white">
-                49737017
+                00000000
               </Text>
             </Flex>
             <Flex as={"dl"} alignItems={"center"} gap="0.8rem">
@@ -112,7 +112,7 @@ function Footer({ children }) {
               </Text>
 
               <Text as="dd" color="brand.white">
-                7436 2005170
+                0000 0000000
               </Text>
             </Flex>
           </Box>
@@ -174,7 +174,7 @@ function Footer({ children }) {
               </Text>
 
               <Text as="dd" color="brand.white">
-                Sandager 11, 2605 Brøndby
+                Kattevej 0, 0000 Katteby
               </Text>
             </Box>
           </Box>

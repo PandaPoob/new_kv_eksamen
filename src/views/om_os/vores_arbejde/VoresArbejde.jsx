@@ -32,7 +32,7 @@ function VoresArbejde({ sideData }) {
           Indfangning og rehabilitering
         </Heading>
         <Text maxW={"70ch"}>
-          Kattens Værns primære fokus er indfangning og rehabilitering af
+          Kattens Værdier primære fokus er indfangning og rehabilitering af
           herreløse og vilde katte. Dette er en større process og vi har mange
           afdelinger og fagfolk som varetager byrden.
           <br />
@@ -80,7 +80,7 @@ function VoresArbejde({ sideData }) {
               Katteinspektørkorpset
             </Heading>
             <Text pt="1rem" as="p" size={"body"} maxW="70ch">
-              Kattens Værns Katteinspektørkorps dækker næsten hele Danmark, og
+              Kattens Værdier Katteinspektørkorps dækker næsten hele Danmark, og
               er dem der bærer ansvaret for indfangningen af vilde katte. <br />
               <br /> Korpset består af 10 fuldtidsansatte medarbejdere, som
               kører året rundt i alt slags vejr og på alle tider af døgnet, for
@@ -136,7 +136,7 @@ function VoresArbejde({ sideData }) {
           Internater
         </Heading>
         <Text maxW={"70ch"}>
-          Kattens Værns primære fokus er indfangning og rehabilitering af
+          Kattens Værdier primære fokus er indfangning og rehabilitering af
           herreløse og vilde katte. Dette er en større process og vi har mange
           afdelinger og fagfolk som varetager byrden.
           <br />
@@ -218,7 +218,7 @@ function VoresArbejde({ sideData }) {
               men er for usocialiseret til at kunne blive adopteret er
               genudsætning en mulighed. Dette kræver dog en fodervært som er
               ansvarlig for mad, vand og ly til katten. Hvis nogen skulle ønske
-              det har Kattens Værn en fordelagtigt ordning hvor katten bliver
+              det har Kattens Værdier en fordelagtigt ordning hvor katten bliver
               neutraliseret, øremærket, dyrlægetjekket og registreret inden den
               bliver sat tilbage i sit vante område. Gennem neutralisering
               sikrer vi, at kattene ikke formerer sig. Samtidig hjælper kattene
@@ -290,7 +290,7 @@ function VoresArbejde({ sideData }) {
           Kattens velfærd
         </Heading>
         <Text textAlign="center" px="1rem">
-          Kattens Værns arbejder for bedre forhold for katten gennem disse
+          Kattens Værdier arbejder for bedre forhold for katten gennem disse
           mærkesager:
         </Text>
         <Box
@@ -497,7 +497,7 @@ function VoresArbejde({ sideData }) {
               Vores historie
             </Heading>
             <Text maxW={"70ch"}>
-              Da Kattens Værn startede i 1933 som forening var det primært
+              Da Kattens Værdier startede i 1933 som forening var det primært
               fokuseret på baggårdskatte i København. I mange år var løsningen
               at sende overskuddet af baggårdskatte til Jylland, hvor
               landmændene kunne få glæde af kattene som musefangere.
@@ -510,16 +510,16 @@ function VoresArbejde({ sideData }) {
               den viden, vi har om katten til andre instanser. Det være sig både
               katteejere, kommuner og politikere.
               <br />
-              <br />I 1981 købte Kattens Værn bygninger på Dronning Olgas Vej,
-              hvor foreningen fik både hovedsæde, internat og katteklinik. Mange
-              forbinder dermed Kattens Værn med Frederiksberg, men adressen var
-              dyr, så det viste sig efterhånden at give god mening at sælge
-              bygningerne på den attraktive adresse og finde noget bedre og
-              billigere lidt uden for København. <br />I slutningen af 2012 blev
-              bygningerne på Dronning Olgas Vej solgt, og derefter begyndte et
-              større detektivarbejde for at finde det perfekte sted til Kattens
-              Værns fremtidige residens. Valget faldt på Brøndby, hvor en
-              produktionsvirksomhed tidligere havde haft til huse.
+              <br />I 1981 købte Kattens Værdier bygninger på Dronning Olgas
+              Vej, hvor foreningen fik både hovedsæde, internat og katteklinik.
+              Mange forbinder dermed Kattens Værdier med Frederiksberg, men
+              adressen var dyr, så det viste sig efterhånden at give god mening
+              at sælge bygningerne på den attraktive adresse og finde noget
+              bedre og billigere lidt uden for København. <br />I slutningen af
+              2012 blev bygningerne på Dronning Olgas Vej solgt, og derefter
+              begyndte et større detektivarbejde for at finde det perfekte sted
+              til Kattens Værdier fremtidige residens. Valget faldt på Brøndby,
+              hvor en produktionsvirksomhed tidligere havde haft til huse.
               <br />
               Rammerne for både mennesker og katte er gode i Brøndby, og
               flytningen frigjorde en god sum penge, som i stedet kunne bruges
@@ -550,7 +550,7 @@ function VoresArbejde({ sideData }) {
             </Heading>
             <Text maxW={"70ch"}>
               Op indtil 80’erne var det i mange år almindeligt at aflive kattene
-              med udstødningsgas. Denne praksis fik Kattens Værns mangeårige
+              med udstødningsgas. Denne praksis fik Kattens Værdier mangeårige
               dyrlæge og daværende formand for bestyrelsen Tom Schantz
               Kristensen ændret da han fik påvist, hvor meget katten led af den
               aflivningsmetode. Han fik indført, at katten skulle aflives humant

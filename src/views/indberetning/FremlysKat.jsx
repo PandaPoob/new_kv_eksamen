@@ -14,7 +14,7 @@ function FremlysKat() {
         <title>Fremlys en kat</title>
         <meta
           name="description"
-          content="Her kan du fremlyse en vildtlevende kat, der mangler ejer hos Kattens Værn"
+          content="Her kan du fremlyse en vildtlevende kat, der mangler ejer hos Kattens Værdier"
         />
       </Head>
       <Flex

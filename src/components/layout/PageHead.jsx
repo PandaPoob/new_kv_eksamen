@@ -6,6 +6,7 @@ export default function PageHead({ acf }) {
       <link rel="icon" href="/favicon.svg" />
       <title>{acf.sidetitel}</title>
       <meta name="description" content={acf.metatekst} />
+      <meta name="robots" content="noindex" />
     </Head>
   );
 }

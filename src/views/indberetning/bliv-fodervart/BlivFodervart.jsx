@@ -33,7 +33,7 @@ function BlivFodervart({ sideData, artikelData }) {
             Genudsætning
           </Heading>
           <Text>
-            Mange af de katte Kattens Værn får ind er både syge,
+            Mange af de katte Kattens Værdier får ind er både syge,
             tilskadekommende og udmagrede og står derfor ikke til at redde.
             Heldigvis er der stadigvæk en portion hvert år, der, trods alle
             odds, har formået at holde sig væk fra biler, landbrugsmaskiner,

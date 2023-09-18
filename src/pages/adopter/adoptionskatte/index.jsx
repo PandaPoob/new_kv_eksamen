@@ -1,8 +1,13 @@
 import url from "../../../api/url";
 import AdoptionsKatte from "../../../views/adopter/adoptionskatte/AdoptionsKatte";
+import { useEffect } from "react";
 
 function AdoptionsKattePage({ data, sideData }) {
   console.log(data);
+
+  useEffect(() => {
+    alert("Disse katte kan ikke adopteres. Dette er et eksamensprojekt.");
+  }, []);
 
   return <AdoptionsKatte data={data} sideData={sideData} />;
 }

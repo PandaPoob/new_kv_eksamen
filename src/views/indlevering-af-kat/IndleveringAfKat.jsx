@@ -16,12 +16,12 @@ function IndleveringAfKat({ sideData }) {
       />
       <Box display="grid" justifyContent="center" my="6rem" px="1rem">
         <Heading as="h2" size="heading2" mb="1rem">
-          Indlever din kat hos Kattens Værn
+          Indlever din kat hos Kattens Værdier
         </Heading>
         <Text maxW="70ch" ml={{ lg: "0.5rem" }}>
           Hvis du ikke længere kan beholde din private kat mere på grund af
           f.eks. allergi, sygdom eller andet, kan det være vi kan tage imod den
-          så den kan finde et nyt hjem. Dog er Kattens Værns primære fokus de
+          så den kan finde et nyt hjem. Dog er Kattens Værdier primære fokus de
           vildtlevende katte og det betyder at vi ikke altid kan tage imod
           private katte, hvis vores internater allerede er fyldt op. <br />
           <br />

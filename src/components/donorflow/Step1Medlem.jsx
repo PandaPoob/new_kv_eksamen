@@ -14,7 +14,7 @@ function Step1Dono({ sideData, onBelobCallback }) {
   const textArr = [
     "10% rabat på ydelser og produkter (ikke medicin) hos  katteklinikken i Brøndby.",
     "10% rabat på din kats forsikring hos Dyrekassen Danmark.",
-    "10% på foder og katteartikler hos Kattens Værns internater i Brøndby og Aalborg.",
+    "10% på foder og katteartikler hos Kattens Værdier internater i Brøndby og Aalborg.",
     "Vores blad Kattens Venner tilsendes fire gange om året.",
   ];
 

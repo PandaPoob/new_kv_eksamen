@@ -5,6 +5,7 @@ import Carousel from "../../../components/features/Carousel";
 import ContactBox from "./ContactBox";
 import CarouselImage from "../../../components/generics/CarouselImage";
 import Head from "next/head";
+import { useEffect } from "react";
 
 function AdoptionsKat({ katData }) {
   const {
@@ -27,6 +28,10 @@ function AdoptionsKat({ katData }) {
 
   //remove empty entries (false)
   const cleanbilledArr = billedArr.filter((b) => b.url !== false);
+
+  useEffect(() => {
+    alert("Disse katte kan ikke adopteres. Dette er et eksamensprojekt.");
+  }, []);
 
   return (
     <PageLayout>

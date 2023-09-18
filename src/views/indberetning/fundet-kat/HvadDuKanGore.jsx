@@ -182,7 +182,7 @@ function HvadDuKanGore() {
               </ListItem>
             </List>
             <Text mt={"2rem"} fontSize={"xxs"} maxW="75ch">
-              Kattens Værn tager som udgangspunkt ikke chippede eller mærkede
+              Kattens Værdier tager som udgangspunkt ikke chippede eller mærkede
               katte ind, da vores arbejde primært fokuserer på de herreløse
               katte, og mærket/chippen betyder at de har en registreret ejer.
             </Text>

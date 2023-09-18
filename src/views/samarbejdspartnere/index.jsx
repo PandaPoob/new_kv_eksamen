@@ -91,13 +91,13 @@ function Samarbejdspartnere({ data, sideData }) {
         >
           <SamarbejdspartnereListe
             heading={
-              "Dyrlæger der samarbejder med Kattens Værns katteinspektører"
+              "Dyrlæger der samarbejder med Kattens Værdier katteinspektører"
             }
             data={dyrlaegeData}
           />
           <SamarbejdspartnereListe
             heading={
-              "Internater/pasningsordninger der samarbejder med Kattens Værn om pleje og pasning af katte"
+              "Internater/pasningsordninger der samarbejder med Kattens Værdier om pleje og pasning af katte"
             }
             data={internatData}
           />

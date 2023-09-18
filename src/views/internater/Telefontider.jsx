@@ -63,7 +63,7 @@ export default function Telefontider({ data, tlfnr }) {
           Administrationen
         </Heading>
         <Text>
-          Administrationen ligger i Kattens Værns afdeling i Brøndby og deres
+          Administrationen ligger i Kattens Værdier afdeling i Brøndby og deres
           telefon har åbent man-tors 10:00-15.00 og fredag 10:00-14:00{" "}
         </Text>
       </Box>
